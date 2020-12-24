@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport content="width=device-width, initial-scale=1.0">
+        <title>Personal Site</title>
+        <link rel="stylesheet"
+            href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+    </head>
+    <body>
+        <pre><code class="rust">
+/// Generates an MD5-Hashed signature required for API queries.
+fn make_signature(dev_id: &str, methodname: &str, token: &str, time: &str) -> String {
+    let unhashed_signature = format!("{}{}{}{}", dev_id, methodname, token, time);
+    let bytes = unhashed_signature.as_bytes();
+    format!("{:x}", md5::compute(bytes))
+}
+        </code></pre>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </body>
+</html>
