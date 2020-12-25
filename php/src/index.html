@@ -8,14 +8,61 @@
             href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
     </head>
     <body>
-        <pre><code class="rust">
+        <div id="snippets">
+
+            <div id="rust-example">
+                <pre><code class="rust">
 /// Generates an MD5-Hashed signature required for API queries.
 fn make_signature(dev_id: &str, methodname: &str, token: &str, time: &str) -> String {
     let unhashed_signature = format!("{}{}{}{}", dev_id, methodname, token, time);
     let bytes = unhashed_signature.as_bytes();
     format!("{:x}", md5::compute(bytes))
 }
-        </code></pre>
+                </code></pre>
+            </div>
+
+            <div id="java-example">
+                <pre><code class="java">
+private void fetchFavorites() {
+    db.collection("userdata")
+            .document(user.getEmail())
+            .collection("favorites")
+            .get()
+            .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    if (task.isSuccessful()) {
+                        favoritesMap = new HashMap<>();
+                        for (QueryDocumentSnapshot document : task.getResult()) {
+                            College college = document.toObject(College.class);
+                            favoritesMap.put(String.valueOf(college.getId()), college);
+                        }
+                    } else {
+                        Log.d(TAG2, "Error getting documents: ", task.getException());
+                    }
+                }
+            });
+}
+                </code></pre>
+            </div>
+
+            <div id="python-example">
+                <pre><code class="python">
+@client.command()
+async def help(context):
+    embed = discord.Embed(
+        title=f"HELP",
+        color=discord.Color.green()
+    )
+    embed.add_field(
+        name="#build", value="Say #build followed by god name, e.g.\n \"#build anubis\"")
+
+    embed.set_footer(text="https://github.com/ludwj61/SmiteBotBetter")
+
+    await context.send(embed=embed)
+                </code></pre>
+            </div>
+        </div>
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
     </body>
