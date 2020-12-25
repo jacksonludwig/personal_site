@@ -38,7 +38,7 @@ private void fetchFavorites() {
                             favoritesMap.put(String.valueOf(college.getId()), college);
                         }
                     } else {
-                        Log.d(TAG2, "Error getting documents: ", task.getException());
+                        Log.d(TAG, "Error getting documents: ", task.getException());
                     }
                 }
             });
