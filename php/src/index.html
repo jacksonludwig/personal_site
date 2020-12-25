@@ -6,9 +6,15 @@
         <title>Personal Site</title>
         <link rel="stylesheet"
             href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+        <link rel="stylesheet"
+            href="resources/style.css">
     </head>
     <body>
-        <div id="snippets">
+        <div id="header">
+            <h1>Jackson Ludwig</h1>
+        </div>
+
+        <div id="snippetsgrid">
 
             <div id="rust-example">
                 <pre><code class="rust">
@@ -51,7 +57,7 @@ private void fetchFavorites() {
 @client.command()
 async def help(context):
     embed = discord.Embed(
-        title=f"HELP",
+        title="HELP",
         color=discord.Color.green()
     )
     embed.add_field(
@@ -63,6 +69,13 @@ async def help(context):
                 </code></pre>
             </div>
         </div>
+
+        <div id="summary">
+            <h1>Summary</h1>
+            etcetc
+        </div>
+
+
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
     </body>
