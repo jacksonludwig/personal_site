@@ -19,7 +19,7 @@
             <div id="rust-example">
                 <pre><code class="rust">
 /// Generates an MD5-Hashed signature required for API queries.
-fn make_signature(dev_id: &str, methodname: &str, token: &str, time: &str) -> String {
+fn make_signature(dev_id: &#38;str, methodname: &#38;str, token: &#38;str, time: &#38;str) -&gt; String {
     let unhashed_signature = format!("{}{}{}{}", dev_id, methodname, token, time);
     let bytes = unhashed_signature.as_bytes();
     format!("{:x}", md5::compute(bytes))
@@ -63,7 +63,7 @@ async def help(context):
     embed.add_field(
         name="#build", value="Say #build followed by god name, e.g.\n \"#build anubis\"")
 
-    embed.set_footer(text="https://github.com/ludwj61/SmiteBotBetter")
+    embed.set_footer(text="https://github.com/jacksonludwig/SmiteBotBetter")
 
     await context.send(embed=embed)
                 </code></pre>
