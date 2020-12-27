@@ -1,6 +1,7 @@
-#snippetsgrid {
+section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
 }
 
 .snippet-item {
@@ -8,25 +9,14 @@
     grid-column-end: 1;
 }
 
-.snippet-desc {
+h1, div, p {
     display: flex;
     justify-items: center;
     align-items: center;
-    grid-column-start: 2;
-    grid-column-end: 2;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#rust-desc {
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-
-#java-desc {
-    grid-row-start: 2;
-    grid-row-end: 2;
-}
-
-#python-desc {
-    grid-row-start: 3;
-    grid-row-end: 3;
+#summary {
+    display: grid;
 }

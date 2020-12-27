@@ -14,7 +14,7 @@
             <h1>Jackson Ludwig</h1>
         </div>
 
-        <div id="snippetsgrid">
+        <section id="snippets">
 
             <div class="snippet-item" id="rust-example">
                 <pre><code class="rust">
@@ -25,6 +25,9 @@ fn make_signature(dev_id: &#38;str, methodname: &#38;str, token: &#38;str, time:
     format!("{:x}", md5::compute(bytes))
 }
                 </code></pre>
+            </div>
+            <div id="rust-desc" class="snippet-item">
+                <p>this is rust desc</p>
             </div>
 
             <div class="snippet-item" id="java-example">
@@ -38,7 +41,7 @@ private void fetchFavorites() {
                 @Override
                 public void onComplete(@NonNull Task&lt;QuerySnapshot&gt; task) {
                     if (task.isSuccessful()) {
-                        favoritesMap = new HashMap&lt;&gt;
+                        favoritesMap = new HashMap&lt;&gt;();
                         for (QueryDocumentSnapshot document : task.getResult()) {
                             College college = document.toObject(College.class);
                             favoritesMap.put(String.valueOf(college.getId()), college);
@@ -49,6 +52,9 @@ private void fetchFavorites() {
             });
 }
                 </code></pre>
+            </div>
+            <div id="java-desc" class="snippet-item">
+                <p>this is java desc</p>
             </div>
 
             <div class="snippet-item" id="python-example">
@@ -67,24 +73,14 @@ async def help(context):
     await context.send(embed=embed)
                 </code></pre>
             </div>
-
-            <div id="rust-desc" class="snippet-desc">
-                this is rust desc
+            <div id="python-desc" class="snippet-item">
+                <p>this is python desc</p>
             </div>
-
-            <div id="java-desc" class="snippet-desc">
-                this is java desc
-            </div>
-
-            <div id="python-desc" class="snippet-desc">
-                this is python desc
-            </div>
-
-        </div>
+        </section>
 
         <div id="summary">
-            <h1>Summary</h1>
-            etcetc
+            <h1 id="summary-head">Summary</h1>
+            <p>etcetc</p>
         </div>
 
 
