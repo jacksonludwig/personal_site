@@ -34,11 +34,11 @@ private void fetchFavorites() {
             .document(user.getEmail())
             .collection("favorites")
             .get()
-            .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            .addOnCompleteListener(new OnCompleteListener&lt;QuerySnapshot&gt; {
                 @Override
-                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                public void onComplete(@NonNull Task&lt;QuerySnapshot&gt; task) {
                     if (task.isSuccessful()) {
-                        favoritesMap = new HashMap<>();
+                        favoritesMap = new HashMap&lt;&gt;
                         for (QueryDocumentSnapshot document : task.getResult()) {
                             College college = document.toObject(College.class);
                             favoritesMap.put(String.valueOf(college.getId()), college);
