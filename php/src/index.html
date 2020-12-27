@@ -5,16 +5,22 @@
         <meta name="viewport content="width=device-width, initial-scale=1.0">
         <title>Personal Site</title>
         <link rel="stylesheet"
-            href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+              href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/monokai-sublime.min.css">
         <link rel="stylesheet"
-            href="resources/style.css">
+              href="resources/style.css">
     </head>
     <body>
-        <div id="header">
-            <h1>Jackson Ludwig</h1>
-        </div>
 
-        <section id="snippets">
+        <section>
+
+            <div id="header">
+                <h1 id="author"><span class="underline">Jackson Ludwi</span>g</h1>
+            </div>
+
+            <div class="snippet-title">
+                <h2>Code Snippets</h2>
+                <p>Some snapshots of my personal projects. For more examples please see my <a target="_blank" href="https://github.com/jacksonludwig">GitHub</a>.</p>
+            </div>
 
             <div class="snippet-item" id="rust-example">
                 <pre><code class="rust">
@@ -27,7 +33,7 @@ fn make_signature(dev_id: &#38;str, methodname: &#38;str, token: &#38;str, time:
                 </code></pre>
             </div>
             <div id="rust-desc" class="snippet-item">
-                <p>this is rust desc</p>
+                <p>This is from my program to interface with the <a target="_blank" href="https://www.hirezstudios.com/">Hi-Rez</a> Developer API.</p>
             </div>
 
             <div class="snippet-item" id="java-example">
@@ -76,13 +82,13 @@ async def help(context):
             <div id="python-desc" class="snippet-item">
                 <p>this is python desc</p>
             </div>
+
+            <div id="summary">
+                <h1 id="summary-head">Summary</h1>
+                <p>etcetc</p>
+            </div>
+
         </section>
-
-        <div id="summary">
-            <h1 id="summary-head">Summary</h1>
-            <p>etcetc</p>
-        </div>
-
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>

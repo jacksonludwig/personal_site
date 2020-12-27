@@ -4,19 +4,27 @@ section {
     align-content: center;
 }
 
-.snippet-item {
-    grid-column-start: 1;
-    grid-column-end: 1;
+body {
+    background-color: #DFCFBE;
+    font-family: "Inconsolata", "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-h1, div, p {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+pre > code {
+    font-family: "Source Code Pro", "Sans Mono", "Consolas", "Courier", monospace;
 }
 
-#summary {
-    display: grid;
+h1 {
+    font-size: 2.3em;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+p {
+    font-size: 1.2em;
 }
