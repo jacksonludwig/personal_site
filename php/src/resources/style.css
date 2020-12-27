@@ -10,7 +10,7 @@ body {
 }
 
 pre > code {
-    font-family: "Source Code Pro", "Sans Mono", "Consolas", "Courier", monospace;
+    font-family: "Inconsolata", "Source Code Pro", "Sans Mono", "Consolas", "Courier", monospace;
 }
 
 h1 {
@@ -26,5 +26,5 @@ h2 {
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.125em;
 }
