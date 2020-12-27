@@ -1,7 +1,13 @@
 section {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-content: center;
+}
+
+section > div {
+    grid-column-start: 2;
+    grid-column-end: 2;
 }
 
 body {
@@ -15,6 +21,7 @@ pre > code {
 
 h1 {
     font-size: 2.3em;
+    display: inline;
 }
 
 .underline {
@@ -28,3 +35,22 @@ h2 {
 p {
     font-size: 1.125em;
 }
+
+.project-link {
+    font-size: 0.8em;
+}
+
+#header {
+    position: relative;
+}
+
+#header > span {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.plink {
+    font-size: 1.2em;
+}
+
