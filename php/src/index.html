@@ -16,7 +16,7 @@
 
         <div id="snippetsgrid">
 
-            <div id="rust-example">
+            <div class="snippet-item" id="rust-example">
                 <pre><code class="rust">
 /// Generates an MD5-Hashed signature required for API queries.
 fn make_signature(dev_id: &#38;str, methodname: &#38;str, token: &#38;str, time: &#38;str) -&gt; String {
@@ -27,7 +27,7 @@ fn make_signature(dev_id: &#38;str, methodname: &#38;str, token: &#38;str, time:
                 </code></pre>
             </div>
 
-            <div id="java-example">
+            <div class="snippet-item" id="java-example">
                 <pre><code class="java">
 private void fetchFavorites() {
     db.collection("userdata")
@@ -43,16 +43,15 @@ private void fetchFavorites() {
                             College college = document.toObject(College.class);
                             favoritesMap.put(String.valueOf(college.getId()), college);
                         }
-                    } else {
+                    } else
                         Log.d(TAG, "Error getting documents: ", task.getException());
-                    }
                 }
             });
 }
                 </code></pre>
             </div>
 
-            <div id="python-example">
+            <div class="snippet-item" id="python-example">
                 <pre><code class="python">
 @client.command()
 async def help(context):
@@ -68,6 +67,19 @@ async def help(context):
     await context.send(embed=embed)
                 </code></pre>
             </div>
+
+            <div id="rust-desc" class="snippet-desc">
+                this is rust desc
+            </div>
+
+            <div id="java-desc" class="snippet-desc">
+                this is java desc
+            </div>
+
+            <div id="python-desc" class="snippet-desc">
+                this is python desc
+            </div>
+
         </div>
 
         <div id="summary">
